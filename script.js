@@ -1,5 +1,7 @@
 // Write your JavaScript code here!
 
+const formSubmission = require("./scriptHelper.js");
+
 window.addEventListener("load", function () {
 
     let form = document.querySelector("form")
@@ -12,6 +14,9 @@ window.addEventListener("load", function () {
             alert("ALL FIELDS ARE REQUIRED!")
             event.preventDefault();
         }
+
+        let list = document.getElementById("faultyItems");
+        formSubmission(document, list, pilotName, copilotName, fuelLevel, cargoMass)
     })
 
     let listedPlanets;
