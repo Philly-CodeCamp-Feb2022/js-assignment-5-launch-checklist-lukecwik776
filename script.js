@@ -1,7 +1,5 @@
 // Write your JavaScript code here!
 
-const formSubmission = require("./scriptHelper.js");
-
 window.addEventListener("load", function () {
 
     let form = document.querySelector("form")
